@@ -170,6 +170,7 @@ img {
   background-color: #e5e7eb;
   display: flex;
   flex-direction: column;
+  max-width: 1100px;
   /* align-items: center; */
 }
 
@@ -200,9 +201,56 @@ img {
   /* flex: 1; */
 }
 
-/* When looking at screens <700px, hero image disappears */
+/* When looking at screens <700px, hero image disappears RESPONSIVE DESIGN/MOBILE FRIENDLY */
 @media only screen and (max-width: 700px) {
   .hero > .right {
     display: none;
+  }
+
+  .navbar {
+    /* border: 2px solid blue; */
+    background-color: #27005d;
+    display: flex;
+    flex-basis: 50px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+  }
+
+  .hero {
+    /* border: 1px solid red; */
+    background-color: #27005d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 15px;
+    gap: 50px;
+    min-width: 0;
+  }
+
+  .hero > .left {
+    /* border: 1px solid blue; */
+    flex: 1;
+    /* flex-basis: 465px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    /* padding-right: 70px; */
+  }
+
+  .button {
+    background-color: #9400ff;
+    /* border: 2px red solid; */
+    color: white;
+    padding: 15px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    /* margin: 4px 2px; */
+    cursor: pointer;
+    border-radius: 8px;
   }
 }
